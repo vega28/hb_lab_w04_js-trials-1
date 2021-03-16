@@ -103,20 +103,75 @@ def censor_vowels(word):
 
 
 def snake_to_camel(string):
-    pass  # TODO: replace this line with your code
+    """ Given a string in snake case, return a string in upper camel case.
+
+    Ex.:
+    >>> snake_to_camel('hello_world')
+    'HelloWorld'
+    """
+    camel_case = []
+
+    for word in string.split('_'):
+        camel_case.append(word[0].upper() + word[1:])
+
+    return ''.join(camel_case)
 
 
 def longest_word_length(words):
-    pass  # TODO: replace this line with your code
+    """ Return the length of the longest word in the given array of words.
+
+    Ex.:
+    > longestWordLength(['hello', 'world']);
+    5
+
+    > longestWordLength(['jellyfish', 'zebra']);
+    9
+    """
+
 
 
 def truncate(string):
-    pass  # TODO: replace this line with your code
+    """ Truncate repeating characters into one character.
 
+    Ex.:
+    > truncate('aaaabbbbcccca');
+    'abca'
+
+    > truncate('hi***!!!! wooow');
+    'hi*! wow'
+    """
+ 
+ 
 
 def has_balanced_parens(string):
-    pass  # TODO: replace this line with your code
+    """ // Return true if all parentheses in a given string are balanced.
+    //
+    // Ex.:
+    // > hasBalancedParens('()');
+    // true
+    //
+    // > hasBalancedParens('((This) (is) (good))');
+    // true
+    //
+    // > hasBalancedParens('(Oh no!)(');
+    // false
+    """
+
 
 
 def compress(string):
-    pass  # TODO: replace this line with your code
+    """ // Return a compressed version of the given string.
+    //
+    // Ex.:
+    //   > compress('aabbaabb');
+    //   'a2b2a2b2'
+    //
+    // If a character appears once, it shouldn't be followed by a number:
+    //   > compress('abc');
+    //   'abc'
+    //
+    // The function should handle all types of characters:
+    //   > compress('Hello, world! Cows go moooo...');
+    //   'Hel2o, world! Cows go mo4.3'
+    """
+
