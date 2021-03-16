@@ -1,7 +1,7 @@
 "use strict";
 
 // Print each item in the given array.
-//
+
 // Ex.:
 //   > outputAllItems([1, 'hello', true]);
 //   1
@@ -15,10 +15,10 @@ function outputAllItems(items) {
 
 
 // Given an array of numbers, return an array of all even numbers.
-//
+
 // Ex.:
 //   > getAllEvens([7, 8, 10, 1, 2, 2]);
-//   [8, 2, 2]
+//   [8, 10, 2, 2]
 function getAllEvens(nums) {
   const evenNums = [];
 
@@ -33,7 +33,7 @@ function getAllEvens(nums) {
 
 
 // Given an array, return all elements at odd numbered indices.
-//
+
 // Ex.:
 //   > getOddIndices([1, 'hello', true, 500]);
 //   ['hello', 500]
@@ -51,7 +51,7 @@ function getOddIndices(items) {
 
 
 // Given an array, output a numbered list.
-//
+
 // Ex.:
 // > printAsNumberedList([1, 'hello', true]);
 // 1. 1
@@ -69,11 +69,11 @@ function printAsNumberedList(items) {
 
 
 // Return an array of numbers in a certain range.
-//
+
 // Ex.:
 // > getRange(0, 5);
 // [0, 1, 2, 3, 4]
-//
+
 // > getRange(1, 3);
 // [1, 2]
 function getRange(start, stop) {
@@ -96,8 +96,9 @@ function censorVowels(word) {
   for (const letter of word) {
     if ('aeiou'.includes(letter)) {
       chars.push('*');
+    } else {
+      chars.push(letter);
     }
-    chars.push(letter);
   }
 
   return chars.join('');
